@@ -21,20 +21,20 @@ describe("main.css", () => {
   });
 
   it("sets #red div border-top-color to #f00", () => {
-    const rule = findRule(css.cssRules, "#red");
-    expect(rule, "Missing #red rule").to.exist;
+      const rule = findRule(css.cssRules, "#red");
+      expect(rule, "Missing #red rule").to.exist;
 
-    const hint = "Incorrect border-top-color property for #red";
-    expect(rule.style["border-top-color"], hint).to.eq("#f00");
-  });
+      const hint = "Incorrect border-top-color property for #red";
+      expect(rule.style["border-top-color"], hint).to.eq("#f00");
+    });
 
   it("sets #orange div border-top-color to #ffa500", () => {
-    const rule = findRule(css.cssRules, "#orange");
-    expect(rule, "Missing #orange rule").to.exist;
+      const rule = findRule(css.cssRules, "#orange");
+      expect(rule, "Missing #orange rule").to.exist;
 
-    const hint = "Incorrect border-top-color property for #orange";
-    expect(rule.style["border-top-color"], hint).to.eq("#ffa500");
-  });
+      const hint = "Incorrect border-top-color property for #orange";
+      expect(rule.style["border-top-color"], hint).to.eq("#ffa500");
+    });
 
   it("sets #yellow div border-top-color to #ff0", () => {
     const rule = findRule(css.cssRules, "#yellow");
